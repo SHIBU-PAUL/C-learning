@@ -5,9 +5,10 @@ int decToBinary(int num){
     int pow = 1, ans = 0;
      while (num > 0){
         int rem = ( num % 10 );
-        num = num / 10;
+        
         ans = ans + (rem * pow);
-        pow = pow * 10;
+        num = num / 10;
+        pow = pow * 2;
     }
     return ans; //binary form
 }
