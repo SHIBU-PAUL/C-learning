@@ -3,16 +3,15 @@
 using namespace std;
 
 int main(){
-    vector<int> nums = {2,7,15,20};
+    vector<int> nums = {7,2,15,20};
     int target = 22 ;
     int n = nums.size();
     vector<int> ans;
-    int ps ;
 
     int i = 0, j = n-1;
 
     while (i<j){
-        ps = nums[i] + nums[j];
+        int ps = nums[i] + nums[j];
         if(ps > target){
             j--;
         }
@@ -28,7 +27,7 @@ int main(){
     }
 
 
-        cout << ans[0] << ", " << ans[1] << endl;
+    cout << ans[0] << ", " << ans[1] << endl;
 
 
     return 0;
